@@ -34,7 +34,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: ./
-          file: dockerfiles/${{ matrix.dockerfile }}
+          file: ${{ matrix.dockerfile }}
           builder: ${{ steps.buildx.outputs.name }}
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/nevuly-dev-base:${{ matrix.tag }}
