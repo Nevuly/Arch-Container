@@ -2,7 +2,7 @@ name: Arch Linux Docker Image Build for WSL2 Kernel Builds
 
 on:
   schedule:
-    - cron: '0 23 * * *'
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 jobs:
